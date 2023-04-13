@@ -5,7 +5,7 @@ import "./styles/main.css";
 
 function Demo() {
   // return <Homepage />;
-  return <Wrapper page={Routing} />;
+  return <Wrapper page={Routing} max={4} />;
 }
 
 export default Demo;

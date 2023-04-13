@@ -12,14 +12,7 @@ export const TitlePage = (props) => {
     <div className="page-container fade-in">
       {/* <ScrollingBackground /> */}
       <div className="title-container">
-        <h1>History</h1>
-        <h2>Original Novel by Leo Tolstoy</h2>
-        <p>
-          A brief textual analysis of one of the most highly praised pieces of
-          world classical literature, presented as an interactive data
-          visualization essay.
-        </p>
-        <h4>Created by Giao Vu Dinh | Originally published in July 2022</h4>
+        <h3>Emergent Patterns in Music: The Road So Far</h3>
       </div>
     </div>
   );

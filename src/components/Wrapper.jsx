@@ -7,12 +7,11 @@ import { ProgressBar } from "./ProgressBar";
 export const Wrapper = (props) => {
   const Page = props.page;
   const [page, setPage] = useState(0);
-  const max = 13;
 
   const nextPage = () => {
     setPage((curr) => {
       let temp = curr + 1;
-      return temp < max ? temp : max;
+      return temp < props.max ? temp : props.max;
     });
   };
   const prevPage = () => {
@@ -44,9 +43,9 @@ export const Wrapper = (props) => {
   return (
     <>
       {/* <MobileBanner /> */}
-      <ProgressBar current={page} total={max} />
+      <ProgressBar current={page} total={props.max} />
       <Page page={page} />
-      {page !== max && (
+      {page !== props.max && (
         <button className="btn next-btn" onClick={nextPage}>
           Next
         </button>

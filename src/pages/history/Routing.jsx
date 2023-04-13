@@ -3,19 +3,15 @@ import React, { useState } from "react";
 // import { ScrollingBackground } from "./ScrollingBackground";
 
 import { TitlePage } from "./TitlePage";
-// import { Navigation } from "../pages/Navigation";
-// import { IntroPage } from "../pages/IntroPage";
-// import { IntroPageTwo } from "../pages/IntroPageTwo";
-// import { CharacterIntro } from "../pages/CharacterIntro";
-// import { AllCharacters } from "../pages/AllCharacters";
-// import { AllCharactersBook } from "../pages/AllCharactersBook";
-// import { CharacterHeat } from "../pages/CharacterHeat";
-// import { Locations } from "../pages/Locations";
-// import { Themes } from "../pages/Themes";
-// import { LocationsIntro } from "../pages/LocationsIntro";
-// import { ThemeIntro } from "../pages/ThemeIntro";
-// import { Outro } from "../pages/Outro";
-// import { Credits } from "../pages/Credits";
+import { PageOne } from "./PageOne";
+import { Navigation } from "./Navigation";
+import { PrevOne } from "./PrevOne";
+import { Borgo } from "./Borgo";
+import { Walton } from "./Walton";
+import { TricaudIntro } from "./TricaudIntro";
+import { Entropy } from "./Entropy";
+import { Rules } from "./Rules";
+import { Feedback } from "./Feedback";
 
 export const Routing = (props) => {
   const { page } = props;
@@ -30,24 +26,24 @@ export const Routing = (props) => {
     switch (page) {
       case 0:
         return <TitlePage updateBG={updateBG} />;
-      //   case 1:
-      //     return <Navigation updateBG={updateBG} />;
-      //   case 2:
-      //     return <IntroPage updateBG={updateBG} />;
-      //   case 3:
-      //     return <IntroPageTwo updateBG={updateBG} />;
-      //   case 4:
-      //     return <CharacterIntro updateBG={updateBG} />;
-      //   case 5:
-      //     return <CharacterHeat updateBG={updateBG} />;
-      //   case 6:
-      //     return <AllCharactersBook />;
-      //   case 7:
-      //     return <AllCharacters updateBG={updateBG} />;
-      //   case 8:
-      //     return <LocationsIntro updateBG={updateBG} />;
-      //   case 9:
-      //     return <Locations updateBG={updateBG} />;
+      case 1:
+        return <Navigation updateBG={updateBG} />;
+      case 2:
+        return <PageOne updateBG={updateBG} />;
+      case 3:
+        return <PrevOne updateBG={updateBG} />;
+      case 4:
+        return <Borgo updateBG={updateBG} />;
+      case 5:
+        return <Walton updateBG={updateBG} />;
+      case 6:
+        return <TricaudIntro updateBG={updateBG} />;
+      case 7:
+        return <Entropy updateBG={updateBG} />;
+      case 8:
+        return <Rules updateBG={updateBG} />;
+      case 9:
+        return <Feedback updateBG={updateBG} />;
       //   case 10:
       //     return <ThemeIntro updateBG={updateBG} />;
       //   case 11:
