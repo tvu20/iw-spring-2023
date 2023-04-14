@@ -1,5 +1,5 @@
 import { TitlePage } from "./TitlePage";
-import { PageOne } from "./PageOne";
+// import { PageOne } from "./PageOne";
 import { Navigation } from "./Navigation";
 import { ResearchTitle } from "./ResearchTitle";
 import { PrevOne } from "./PrevOne";
@@ -22,7 +22,7 @@ import { End } from "./End";
 export const pagesArray = [
   TitlePage,
   Navigation,
-  PageOne,
+  // PageOne,
   ResearchTitle,
   PrevOne,
   Borgo,

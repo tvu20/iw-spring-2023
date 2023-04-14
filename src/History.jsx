@@ -5,7 +5,7 @@ import "./styles/main.css";
 
 function History() {
   // return <Homepage />;
-  return <Wrapper page={Routing} max={19} />;
+  return <Wrapper page={Routing} max={18} />;
 }
 
 export default History;
