@@ -13,6 +13,19 @@ import { Entropy } from "./Entropy";
 import { Rules } from "./Rules";
 import { Feedback } from "./Feedback";
 
+const pagesArray = [
+  TitlePage,
+  Navigation,
+  PageOne,
+  PrevOne,
+  Borgo,
+  Walton,
+  TricaudIntro,
+  Entropy,
+  Rules,
+  Feedback,
+];
+
 export const Routing = (props) => {
   const { page } = props;
 
@@ -22,38 +35,19 @@ export const Routing = (props) => {
     if (value !== showBG) setShowBG(value);
   };
 
+  const pageComponent = pagesArray.map((Component, idx) => {
+    if (idx === page) {
+      return <Component updateBG={updateBG} />;
+    } else {
+      return null;
+    }
+  });
+
   const showPage = () => {
-    switch (page) {
-      case 0:
-        return <TitlePage updateBG={updateBG} />;
-      case 1:
-        return <Navigation updateBG={updateBG} />;
-      case 2:
-        return <PageOne updateBG={updateBG} />;
-      case 3:
-        return <PrevOne updateBG={updateBG} />;
-      case 4:
-        return <Borgo updateBG={updateBG} />;
-      case 5:
-        return <Walton updateBG={updateBG} />;
-      case 6:
-        return <TricaudIntro updateBG={updateBG} />;
-      case 7:
-        return <Entropy updateBG={updateBG} />;
-      case 8:
-        return <Rules updateBG={updateBG} />;
-      case 9:
-        return <Feedback updateBG={updateBG} />;
-      //   case 10:
-      //     return <ThemeIntro updateBG={updateBG} />;
-      //   case 11:
-      //     return <Themes updateBG={updateBG} />;
-      //   case 12:
-      //     return <Outro />;
-      //   case 13:
-      //     return <Credits />;
-      default:
-        return <div>Doesn't exist yet sorry</div>;
+    if (page < pagesArray.length) {
+      return <div>{pageComponent}</div>;
+    } else {
+      return <div>Doesn't exist yet sorry</div>;
     }
   };
 
