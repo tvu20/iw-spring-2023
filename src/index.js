@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 import { Homepage } from "./Homepage";
 import History from "./History";
 import Demo from "./Demo";
+import Algorithm from "./Algorithm";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/demo",
     element: <Demo />,
+  },
+  {
+    path: "/algorithm",
+    element: <Algorithm />,
   },
 ]);
 

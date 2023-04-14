@@ -12,7 +12,6 @@ export const PageOne = (props) => {
     <div className="page-container fade-in">
       {/* <ScrollingBackground /> */}
       <div className="text-container">
-        <h1>What are Emergent Patterns, and how does this relate to music?</h1>
         <p>
           Musical ensemble improvisation is an incredibly complex, impressive,
           and unpredictable phenomenon. In such a performance, musicians pick up

@@ -2,29 +2,7 @@ import React, { useState } from "react";
 
 // import { ScrollingBackground } from "./ScrollingBackground";
 
-import { TitlePage } from "./TitlePage";
-import { PageOne } from "./PageOne";
-import { Navigation } from "./Navigation";
-import { PrevOne } from "./PrevOne";
-import { Borgo } from "./Borgo";
-import { Walton } from "./Walton";
-import { TricaudIntro } from "./TricaudIntro";
-import { Entropy } from "./Entropy";
-import { Rules } from "./Rules";
-import { Feedback } from "./Feedback";
-
-const pagesArray = [
-  TitlePage,
-  Navigation,
-  PageOne,
-  PrevOne,
-  Borgo,
-  Walton,
-  TricaudIntro,
-  Entropy,
-  Rules,
-  Feedback,
-];
+import { pagesArray } from "./pages";
 
 export const Routing = (props) => {
   const { page } = props;

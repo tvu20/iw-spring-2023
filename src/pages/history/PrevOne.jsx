@@ -12,7 +12,6 @@ export const PrevOne = (props) => {
     <div className="page-container fade-in">
       {/* <ScrollingBackground /> */}
       <div className="text-container">
-        <h1>Previous Research on Improvisational Music</h1>
         <p>
           Improvisation, or the art of immediate musical composition, is an
           essential aspect of the art form for all musicians. While
