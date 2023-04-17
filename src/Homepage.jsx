@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { Footer } from "./components/Footer";
+
 import music1 from "./images/music1.png";
 import music2 from "./images/music2.jpeg";
 import neural from "./images/neural.png";
@@ -136,7 +138,7 @@ export const Homepage = () => {
           </p>
         </div>
       </div>
-      <div style={{ width: "100%", marginBottom: "50px" }}>
+      <div style={{ width: "100%", marginBottom: "100px" }}>
         <div className="goals-container">
           <div className="button-item">
             <Link to={`history`}>
@@ -174,11 +176,21 @@ export const Homepage = () => {
         </div>
       </div>
 
-      <h3>Acknowledgements</h3>
+      <div className="thanks-banner" style={{ marginBottom: "50px" }}>
+        <h3>Acknowledgements</h3>
 
-      <p>Advisor: Professor Radikha Nagpal</p>
-      <p>Max and musical guidance: Professor Jeff Snyder</p>
-      <p>Inspiration and algorithm advice: Shawn Bell and Liane Gabora</p>
+        <p>
+          <b>Advisor:</b> Professor Radikha Nagpal
+        </p>
+        <p>
+          <b>Max and musical guidance:</b> Professor Jeff Snyder
+        </p>
+        <p style={{ marginBottom: "80px" }}>
+          <b>Inspiration and algorithm advice:</b> Shawn Bell and Liane Gabora
+        </p>
+      </div>
+
+      <Footer />
     </div>
   );
 };

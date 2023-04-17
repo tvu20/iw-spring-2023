@@ -2,7 +2,7 @@
 
 body {
   margin: 0px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* background-color: #faead4; */
   background-color: white;
   /* color: white; */
@@ -180,6 +180,23 @@ a {
 .tooltip p {
   font-size: 13px;
   margin: 0px;
+}
+
+.footer-container {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(5, 62, 61, 1);
+}
+
+.footer-container img {
+  margin-top: 30px;
+}
+
+.footer-container p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #b1c4c1;
+  margin: 5px 0 20px;
 }
 
 /* MOBILE ONLY */
