@@ -1,6 +1,18 @@
+.homepage-container h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+.homepage-container h4 {
+  margin: 10px 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+}
+
 .home-banner {
   width: 100vw;
-  height: 650px;
+  height: 700px;
   background: linear-gradient(#053e3d, #26998a);
   display: flex;
   justify-content: center;
@@ -70,8 +82,6 @@
 }
 
 .goals-banner h3 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 40px;
   margin-bottom: 60px;
   margin: 80px 125px;
 }
@@ -80,17 +90,12 @@
   margin: 0 125px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .goals-item {
   flex: 1 1 0px;
   height: 300px;
-}
-
-.goals-item h4 {
-  margin: 5px 0;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 24px;
 }
 
 .goals-item img {
@@ -104,6 +109,44 @@
 
 .goals-item + .goals-item {
   margin-left: 2%;
+}
+
+.grid-container {
+  margin: 50px 125px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid-item {
+  /* display: flex;
+  align-items: center; */
+  width: 47%;
+  padding-bottom: 30px;
+}
+
+.grid-item h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 40px;
+}
+
+.button-item {
+  width: 31%;
+  /* flex: 1 1 0px; */
+  /* height: 300px; */
+}
+
+.button-item img {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.button-item h4 {
+  font-size: 20px;
+  padding: 10px 0 0;
+  /* padding: 5px 20px; */
 }
 
 @media (max-width: 1000px) {
@@ -131,6 +174,10 @@
 }
 
 @media (max-width: 800px) {
+  .homepage-container h3 {
+    font-size: 30px;
+  }
+
   .home-banner {
     height: auto;
     min-height: 500px;
@@ -170,7 +217,27 @@
     max-width: 400px;
   }
 
+  .homepage-container h4 {
+    font-size: 18px;
+  }
+
   .goals-item + .goals-item {
     margin-left: 0;
+  }
+
+  .grid-container {
+    flex-direction: column;
+    margin: 50px 30px;
+  }
+
+  .grid-item {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .button-item {
+    width: 100%;
+    margin-bottom: 50px;
+    /* height: auto; */
   }
 }

@@ -6,6 +6,9 @@ import music2 from "./images/music2.jpeg";
 import neural from "./images/neural.png";
 import outputs from "./images/outputs.png";
 import exp from "./images/exp.png";
+import alg from "./images/alg.jpeg";
+import history from "./images/history.jpeg";
+import demo from "./images/demo.png";
 
 import "./styles/text.css";
 import "./styles/homepage.css";
@@ -121,15 +124,55 @@ export const Homepage = () => {
           </div>
         </div>
       </div>
-      <h3>What is this site?</h3>
-      <p>
-        This site is a portfolio for all of the resources, algorithms, and
-        evaluations compiled throughout this independent work process. Click on
-        one of the sections below to get started!
-      </p>
-      <Link to={`history`}>History</Link>
-      <Link to={`algorithm`}>Algorithm</Link>
-      <Link to={`demo`}>Demo</Link>
+      <div className="grid-container">
+        <div className="grid-item">
+          <h3>How should I start using this site?</h3>
+        </div>
+        <div className="grid-item">
+          <p>
+            This site is a portfolio for all of the resources, algorithms, and
+            evaluations compiled throughout this independent work process. Click
+            on one of the sections below to get started!
+          </p>
+        </div>
+      </div>
+      <div style={{ width: "100%", marginBottom: "50px" }}>
+        <div className="goals-container">
+          <div className="button-item">
+            <Link to={`history`}>
+              <img src={history} alt="history" />
+            </Link>
+            <h4>Part 1: History</h4>
+            <p>
+              Take a look at the road so far - what's been researched previously
+              in the fields of self-organization within musical improvisation
+              and generative music.{" "}
+            </p>
+          </div>
+          <div className="button-item">
+            <Link to={`algorithm`}>
+              <img src={alg} alt="alg" />
+            </Link>
+            <h4>Part 2: Algorithm</h4>
+            <p>
+              How do we develop a model representing an interactive
+              music-generation system that utilizes emergent patterns to model
+              how music is improvised within an ensemble?
+            </p>
+          </div>
+          <div className="button-item">
+            <Link to={`demo`}>
+              <img src={demo} alt="demo" />
+            </Link>
+            <h4>Part 3: Demo</h4>
+            <p>
+              By representing key pieces of the algorithm as Max patchers and
+              evaluating their outputs, we can draw inferences about how the
+              larger-scale program might function.{" "}
+            </p>
+          </div>
+        </div>
+      </div>
 
       <h3>Acknowledgements</h3>
 
