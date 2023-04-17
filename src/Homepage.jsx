@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import music1 from "./images/music1.png";
+import music2 from "./images/music2.jpeg";
+import neural from "./images/neural.png";
+import outputs from "./images/outputs.png";
+import exp from "./images/exp.png";
 
 import "./styles/text.css";
 import "./styles/homepage.css";
@@ -37,37 +41,86 @@ export const Homepage = () => {
             predicted by its individual parts.
           </p>
         </div>
-        <div className="flex-item__image">
+        <div className="flex-item__image hide-mobile">
           <img src={music1} alt="music" />
         </div>
       </div>
-      <p>
-        Within a musical ensemble, musicians: Pick up on existing dynamics
-        within the group Follow a set of constraints/rules Adapt over time to
-        meet the needs of the group Musical improvisation demonstrates many
-        properties of self-organization within non-human complex systems!
-      </p>
-      <p>
-        Gaining a better understanding behind the underlying mechanisms of
-        improvisation and musical emergence would have a lot of implications for
-        the artistic field: for example, new composition techniques could be
-        developed through using swarm intelligence models to generate innovative
-        and dynamic compositions, or can help budding musicians develop their
-        musicality and artistic voice.
-      </p>
+      <div className="home-section flex-container">
+        <div className="flex-item__image">
+          <img src={music2} alt="music" />
+        </div>
+        <div className="flex-item flex-item-custom">
+          <p>Within a musical ensemble, musicians:</p>
+          <ul>
+            <li>Pick up on existing dynamics within the group</li>
+            <li>Follow a set of constraints/rules</li>
+            <li>Adapt over time to meet the needs of the group</li>
+          </ul>
+          <p>
+            Musical improvisation demonstrates many properties of
+            self-organization within non-human complex systems!
+          </p>
+          <p>
+            Gaining a better understanding behind the underlying mechanisms of
+            improvisation and musical emergence would have a lot of implications
+            for the artistic field: for example, new composition techniques
+            could be developed through using swarm intelligence models to
+            generate innovative and dynamic compositions, or can help budding
+            musicians develop their musicality and artistic voice.
+          </p>
+        </div>
+      </div>
+      <div className="goals-banner">
+        <h3>Project Goals</h3>
+        <div className="goals-container">
+          <div className="goals-item">
+            <a
+              href="https://www.flaticon.com/free-icons/algorithm"
+              title="algorithm icons"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={neural} alt="icons created by netscript" />
+            </a>
+            <h4>Design an algorithm</h4>
+            <p>
+              for a model that generates music using self-organization and
+              emergent properties.
+            </p>
+          </div>
+          <div className="goals-item">
+            <a
+              href="https://www.flaticon.com/free-icons/output"
+              title="output icons"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={outputs} alt="icon by Vlad Szirka" />
+            </a>
+            <h4>Generate outputs</h4>
+            <p>
+              evaluate key pieces of the algorithm to demonstrate proof of
+              concept and scalability.
+            </p>
+          </div>
 
-      <h3>Project Goals</h3>
-      <p>Design an algorithm for generating music using self-organization</p>
-      <p>
-        Generate outputs and evaluate sections of the algorithm to demonstrate
-        proof of concept{" "}
-      </p>
-      <p>
-        Curate an experience for musicians and listeners to approach this media
-        and gain a better understanding of the field — still allows for an
-        interactive music experience that spreads awareness of this field of
-        study so far!
-      </p>
+          <div className="goals-item">
+            <a
+              href="https://www.flaticon.com/free-icons/music"
+              title="music icons"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={exp} alt="icons created by Freepik" />
+            </a>
+            <h4>Curate an experience</h4>
+            <p>
+              for musicians and computer scientists to approach this media and
+              gain a better understanding of the field.
+            </p>
+          </div>
+        </div>
+      </div>
       <h3>What is this site?</h3>
       <p>
         This site is a portfolio for all of the resources, algorithms, and

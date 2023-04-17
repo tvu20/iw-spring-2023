@@ -25,7 +25,9 @@
 }
 
 .home-section {
-  margin: 0 80px;
+  margin: 50px 110px;
+  padding: 0 15px;
+  font-size: 17px;
 }
 
 .flex-container {
@@ -39,8 +41,13 @@
 .flex-item {
   text-align: left;
   flex-grow: 2;
-  max-width: 55vw;
+  max-width: 50vw;
   padding: 0 15px;
+}
+
+.flex-item-custom {
+  max-width: 45vw;
+  padding-left: 5vw;
 }
 
 .flex-item__image {
@@ -53,9 +60,80 @@
   max-width: 500px;
 }
 
+.goals-banner {
+  width: 100%;
+  padding: 60px 0;
+  margin: 50px 0;
+  background-color: #053e3d;
+  color: white;
+  /* padding: 80px 125px; */
+}
+
+.goals-banner h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 40px;
+  margin-bottom: 60px;
+  margin: 80px 125px;
+}
+
+.goals-container {
+  margin: 0 125px;
+  display: flex;
+  flex-direction: row;
+}
+
+.goals-item {
+  flex: 1 1 0px;
+  height: 300px;
+}
+
+.goals-item h4 {
+  margin: 5px 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+}
+
+.goals-item img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.goals-item p {
+  color: #9fb3b0;
+}
+
+.goals-item + .goals-item {
+  margin-left: 2%;
+}
+
+@media (max-width: 1000px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item {
+    max-width: 100vw;
+    padding-top: 20px;
+  }
+
+  .flex-item-custom {
+    max-width: none;
+    padding-left: 15px;
+  }
+
+  .flex-item__image {
+    padding-bottom: 30px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   .home-banner {
-    /* height: auto; */
+    height: auto;
+    min-height: 500px;
     padding: 100px 0;
   }
 
@@ -66,12 +144,33 @@
     font-size: 18px;
   }
 
-  .flex-container {
-    flex-direction: column;
+  .home-section {
+    margin: 30px 30px;
   }
 
-  .flex-item {
-    max-width: 100vw;
-    padding-top: 20px;
+  .goals-banner {
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .goals-banner h3 {
+    margin: 40px 40px;
+  }
+
+  .goals-container {
+    flex-direction: column;
+    /* width: 100vw; */
+    align-items: center;
+    margin: 0 40px;
+  }
+
+  .goals-item {
+    margin: 40px 0;
+    max-width: 400px;
+  }
+
+  .goals-item + .goals-item {
+    margin-left: 0;
   }
 }
