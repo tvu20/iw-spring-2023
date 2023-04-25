@@ -11,7 +11,7 @@ export const Navigation = (props) => {
 
   return (
     <div className="page-container fade-in">
-      <div className="text-container">
+      <div className="text-container white-bg">
         <h2>Navigating the Site</h2>
         <p>
           You can use the arrow keys on your keyboard to move between pages, or

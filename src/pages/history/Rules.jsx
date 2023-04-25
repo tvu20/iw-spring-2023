@@ -15,21 +15,24 @@ export const Rules = (props) => {
         <h2>2. Rules</h2>
         <p>
           Rules in improvisational ensembles do not dictate the outcome of the
-          performance by defining each performer’s exact behavior; instead, they
-          orient the behavior of each performer but cannot predict the behavior
-          of a system as a whole. Rules come in both physical and abstract
-          constraints: physical constraints being the capabilities of an
-          instrument or performer, and abstract constraints in the form of genre
-          and communication between musicians.
+          performance; instead, they{" "}
+          <b>orient the behavior of each performer</b> but cannot predict the
+          behavior of a system as a whole. Rules come in both
+          <b> physical and abstract constraints:</b> physical constraints being
+          the capabilities of an instrument or performer, and abstract
+          constraints in the form of genre and communication between musicians.
         </p>
         <p>
           When all individual entities of a system follow a common set of rules,
           a structure emerges at the macroscopic level of the system. This
           emergent becomes a constraining force that acts back on the
           performers, forming a feedback loop between the microscopic and
-          macroscopic levels of the system. At every moment, the decision of a
-          performer orients the improvisation in a precise path due to
-          influencing the entropy of the system and enforcing certain rules.
+          macroscopic levels of the system.{" "}
+          <b>
+            At every moment, the decision of a performer orients the
+            improvisation in a precise path due to influencing the entropy of
+            the system and enforcing certain rules.
+          </b>
         </p>
       </div>
     </div>

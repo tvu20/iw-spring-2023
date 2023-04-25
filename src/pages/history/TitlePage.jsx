@@ -13,7 +13,7 @@ export const TitlePage = (props) => {
       {/* <ScrollingBackground /> */}
       <div className="title-container">
         <h1>Emergent Patterns in Music</h1>
-        <h2>The Road So Far</h2>
+        <h2>Part 1: The Road So Far</h2>
       </div>
     </div>
   );

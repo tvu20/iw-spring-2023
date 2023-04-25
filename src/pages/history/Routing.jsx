@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// import { ScrollingBackground } from "./ScrollingBackground";
+import { ScrollingBackground } from "../../components/ScrollingBackground";
 
 import { pagesArray } from "./pages";
 
@@ -15,7 +15,7 @@ export const Routing = (props) => {
 
   const pageComponent = pagesArray.map((Component, idx) => {
     if (idx === page) {
-      return <Component updateBG={updateBG} />;
+      return <Component key={idx} updateBG={updateBG} />;
     } else {
       return null;
     }
@@ -31,7 +31,7 @@ export const Routing = (props) => {
 
   return (
     <>
-      {/* {showBG && <ScrollingBackground />} */}
+      {showBG && <ScrollingBackground />}
       {showPage()}
     </>
   );

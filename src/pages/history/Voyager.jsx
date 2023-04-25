@@ -15,12 +15,17 @@ export const Voyager = (props) => {
         <h2>Voyager</h2>
         <p>
           Voyager, created by George Lewis, is a nonhierarchical, interactive
-          musical environment that allows users to engage with a
-          computer-driven, interactive “virtual improvising orchestra.” This
-          program analyzes aspects of a human improviser’s performance in real
-          time and uses this analysis to guide an automatic composition program
-          that generates complex responses to the musician’s playing and
-          independent behavior arising from its own internal processes.
+          musical environment that{" "}
+          <b>
+            allows users to engage with a computer-driven, interactive “virtual
+            improvising orchestra.”
+          </b>{" "}
+          This program analyzes aspects of a human’s performance in real time
+          and to guide an automatic composition program that generates complex
+          responses to the musician’s playing and independent behavior arising
+          from its own internal processes.
+        </p>
+        <p>
           Premiered in 1987, Voyager existed as a program that migrated from
           hardware to hardware before settling in its current existence as a Max
           program. It has been played in hundreds of concerts around the world,

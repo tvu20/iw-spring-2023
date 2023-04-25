@@ -19,18 +19,24 @@ export const BGTwo = (props) => {
         </p>
         <p className="quote">
           NW is hardwired to exhibit the key properties of real world complex
-          systems through its modular, scale-free, small-world properties… NW
-          networks are not neural networks; they do not adapt or learn by tuning
-          weights between nodes through experience or training, nor do they
-          evolve; nodes simply accept input and respond. Their rules of
-          interaction do not change, adapt, or self-organize over time, but
-          their structure does. Just like an experience or realization can
-          provide the ‘seed incident’ that stimulates creative honing, the
-          pseudo randomly generated initial conditions provide ‘seed incidents’
-          that initiate NW processing. After NW receives its inputs it is a
-          closed system that adapts to itself (self organizes). Musical ideas
-          sometimes unfold in an open ended manner, producing novelty and
-          surprise, both considered hallmarks of emergence.
+          systems through{" "}
+          <b>its modular, scale-free, small-world properties…</b> NW networks
+          are not neural networks; they do not adapt or learn by tuning weights
+          between nodes through experience or training, nor do they evolve;
+          nodes simply accept input and respond.{" "}
+          <b>
+            Their rules of interaction do not change, adapt, or self-organize
+            over time, but their structure does.
+          </b>{" "}
+          Just like an experience or realization can provide the ‘seed incident’
+          that stimulates creative honing, the pseudo randomly generated initial
+          conditions provide ‘seed incidents’ that initiate NW processing. After
+          NW receives its inputs it is a closed system that adapts to itself
+          (self organizes).{" "}
+          <b>
+            Musical ideas sometimes unfold in an open ended manner, producing
+            novelty and surprise, both considered hallmarks of emergence.
+          </b>
         </p>
         <p>
           Bell and Gabora have provided{" "}

@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import { Footer } from "./components/Footer";
 
@@ -16,11 +16,16 @@ import "./styles/text.css";
 import "./styles/homepage.css";
 
 export const Homepage = () => {
-  const wrapperRef = useRef(null);
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    //
-  }, []);
+    // "document.documentElement.scrollTo" is the magic for React Router Dom v6
+    document.documentElement.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant", // Optional if you want to skip the scrolling animation
+    });
+  }, [pathname]);
 
   return (
     <div className="homepage-container fade-in">
@@ -56,7 +61,7 @@ export const Homepage = () => {
           <img src={music1} alt="music" />
         </div>
       </div>
-      <div className="home-section flex-container" ref={wrapperRef}>
+      <div className="home-section flex-container">
         <div className="flex-item__image">
           <img src={music2} alt="music" />
         </div>

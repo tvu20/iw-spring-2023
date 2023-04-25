@@ -3,9 +3,11 @@ import { Wrapper } from "./components/Wrapper";
 import { Routing } from "./pages/history/Routing";
 import "./styles/main.css";
 
+import { pagesArray } from "./pages/history/pages";
+
 function History() {
   // return <Homepage />;
-  return <Wrapper page={Routing} max={18} />;
+  return <Wrapper page={Routing} max={pagesArray.length - 1} />;
 }
 
 export default History;

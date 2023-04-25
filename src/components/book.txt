@@ -1,0 +1,147 @@
+This thesis explores the parallel between self-organisation in non-human complex systems and the process of improvisation in musical ensembles. Both phenomena illustrate the concept of emergence, which can be defined by the appearance of a structure at the scale of the system, that cannot be predicted from the behaviour of its individual components. Swarms and other self-organising systems such as cellular automata offer rich material that could be used in the composition of music, as their behaviour happen to be usually based on a set of simple rules. The goal of this thesis is to draw from the analysis of several complex systems the conditions that allow emergence to happen. The hypotheses stated and analysed in this thesis are being implemented in a research project developed at the Interactive Architecture Lab : Sound Insects.
+
+1. Introduction
+Ensemble improvisation in music is a fascinating phenomenon to witness. Musicians improvising are able to understand the dynamics of the group and can adapt their contribution in real time in order to guarantee the stability of the live composition while at the same time allowing it to evolve. Interestingly, this kind of behaviour echoes the phenomenon of emergence in self-organising systems such as swarms (Blackwell T., 2002) or cellular automata, in which a sustained structure appears at the macroscopic scale of the system (Blackwell T. and Young M., 2004).
+
+“At one level, improvisation can be compared with the ultimate otherness of an ant colony or hive of bees.” (Toop D., 2002)
+
+In a way, musical group improvisation is about trying to create order while dealing with potential disruption at every instant of the performance. This is achieved using peer to peer listening, much like birds that constantly modify their trajectory depending on their neighbours position to enable the group to quickly react to any environmental change.
+
+Understanding more clearly the mechanisms behind improvisation and emergence is very appealing from an artistic perspective. It could lead to new composition techniques and unexplored musical outcomes, for instance by using swarms simulations to generate harmonious and ever-changing musical events or by giving new sets of rules to improvising musicians.
+
+This research project aims to answer the following question : what are the sufficient conditions for the emergence of music in a system of distributed performers?
+
+2. Methodology
+2.1. Hypotheses
+As mentioned above, improvisation in groups of musicians and other self-organising systems shows two determining behaviours :
+
+1. Their ability to create order at the scale of the system
+2. Their ability to generate disorder and react to it
+
+The following diagram (Figure 1) is a graphical representation of the hypotheses stated above. Throughout the performance, the level of order of the musical creation oscillates from periods of structuration (1) when the system self-organises and periods of de-structuration (2) when a disruption modifies the stability of the system.
+
+
+Figure 1. Evolution of order in musical improvisation
+
+ 
+
+The first chapter of the thesis will focus on defining the notion of order in music and identifying the sufficient conditions that enable the creation of order in several self-organising systems. The second chapter will go on to study musical evolution by looking at the origins of disruption and highlighting the conditions that are necessary in the implementation of a system for it to generate disorder and react to it.
+
+2.2. Goal of the study
+This thesis compares the artistic components of self-organisation with those of scientific origin in order to draw conclusions about the core constitutive elements of musical emergence. The goal of the next two chapters is to define a list of hypotheses on the nature of improvising collaborative performers. They aim to answer questions such as: What rules do performers follow? What disruption can affect them? How do they interact with each other and with their environment? If a set of sufficient conditions for the emergence of music can be established, then it may be possible to implement them in a system of distributed machines.
+
+Sound Insects is an immersive interactive sound installation composed of multiple identical electronic modules that interact with each other through audio feedback. As shown on the following diagram (Figure 2) and on the picture of the installation (Figure 3), the system features a set of modules distributed in an environment and interacting with each other when they happen to be within hearing distance. The goal of the project is to explore how trivial rules of interaction applied to a system of independent modules can lead to musical emergence. This project is designed to be both a performative art installation as well as a research tool that could lead to unexplored musical paths and new instrumental interactions. Two prototypes of the project are studied in this thesis: Rhythmic Sound Insects (Prototype 1) and Harmonic Sound Insects (Prototype 2).
+
+
+Figure 2. Sound Insects, Functional Diagram
+
+The contextual research carried on hereafter will serve as a tool to understand what type of algorithm, physical features and surrounding environment should be applied to these trivial modules in order for them to generate music.
+
+
+Figure 3. “Rhythmic Sound Insects”, Marguerite Tricaud (2018)
+
+3. Order
+3.1. A first definition of order : entropy
+Entropy has been used by researchers such as Meyer (Meyer B., 1957) as well as composers such as Stockhausen (Eco U.,1962) or Ianis Xenakis (Xenakis I., 1971) to understand or create music. Cybernetician Max Bense believed that “entropy could be normatively applied to the production of aesthetic products, what he called ‘the programming of beauty’ ” (Patteson T., 2012).
+
+The entropy of a system, often described as its level of disorder, is formally defined in thermodynamics as a quantity dependent of the number of different microscopic configurations that the system can be in. When a system shows an organised behaviour, the entropy of the system decreases.
+
+This can be illustrated by the simple example of a group of musicians following basic rules. If the musicians are asked to play the same note, there is only one option per musician. The number of possible configurations of the system is equal to one, and this is the lowest state of entropy that the system can be in. As one can imagine, a group playing only one note note will sound ordered and stable. If one of these musicians is allowed to play any other note, then the level of disorder will increase. If a pianist is given a choice between any of their 88 keys, then the system can be in 88 different configurations. The level of disorder of the system rises, but is still relatively low compared to a situation where two pianists amongst a group are allowed to play any note (in which case the number of possible configurations is 882 = 7744).
+
+Greg Cox points out the direct correlation between the evolution of tension in a musical piece and its level of entropy, saying “an authentic cadence is a point of repose and thus should be correlated with lower entropy. A dramatic climax should be correlated with a high value of entropy (a local maximum) as it represents a large amount of tension.” (Cox G., 2010).
+
+The entropy of a musical system also correlates to the probability of any given musical event happening at every instant of the performance. Meyer defines musical styles as complex systems of probabilities. He explains that in the tonal harmonic system of Western music, there is a probabilistic relationship between one chord and the chord that will follow: “the tonic chord is most often followed by the dominant, frequently by the subdominant, sometimes by the submedian, and so forth.” (Meyer B., 1957). A musical performance can be seen from a listener’s point of view as a probabilistic tree. As shown in Figure 4, at each moment of the performance, the performer has the choice between all the notes that they can physically generate (events A, B or C), but is highly susceptible to play the note that has the highest probability (for example A if P(A)>P(B) and P(A)>P(B)). The probability of each note depends on the previous notes played, the genre, the instructions of the composer, etc. As stated by Greg Cox, the higher the probability is for a musical event to happen, the lower its entropy (and tension) will be (Cox G., 2010).
+
+
+Figure 4. Probabilistic tree of musical events in an improvised performance
+
+Todd Hostager provides a similar graphical notation to describe the musical path chosen by performers in jazz improvisation. On the following diagram (Figure 5), he represents the musical possibilities by a tree of which the branches correspond to the potential paths offered to the performers. The main branch, highlighted in bold, shows the path taken. He explains that the center of the tree, at the origin of the different paths, represents the “shared information regarding jazz theory, song structure, behavioural norms and communicative codes” (Hostager T., 1988).
+
+
+Figure 5. The centering strategy for organizational innovation, in “Jazz as a Process of Organizational Innovation” (Hostager T., 1988)
+
+The examples above demonstrate that the level of order of a musical performance is defined by a set of constraints or rules that orient the musicians’ choices at each branch of the probabilistic tree.
+
+3.2. Rules
+Improvisation and pre-written music can be both considered as composition. An improvisation is a composition played immediately, whereas pre-written music is played subsequently (Rosenboom D., 1996). Their main difference is that rules in pre-written music dictate the outcome of the performance by defining the exact behaviour of the performers, while ensemble improvisation rules orient the behaviour of each performers but cannot predict the behaviour of the system as a whole. In any type of musical composition (written or improvised music), rules can be defined by both physical and abstract constraints.
+
+3.2.1. Physical constraints
+
+In music, the rules applied to the system are not only defined by an exterior individual (composer) but also come from physical constraints such as the design of the instrument. For instance, a piano has a restrained set of discrete notes that can be played, whereas a cello has a continuous range of possible notes. The physicality of the instrument does not only affect the number of frequencies that can be generated but also the length of the notes, their timbre, etc. These physical constraints mostly apply to acoustic or analog electronic instrument, as digital instruments are practically not affected by physical restrictions of sound production (Tricaud M., 2018). Due to its lack of physical constraints, computer generated music offers high levels of entropy. It therefore needs stronger abstract constraints to lower the level of disorder to a stable musical state.
+
+3.2.2. Abstract constraints
+
+In opposition to physical constraints that are defined by nature, abstract constraints come from socially constructed laws such as the musical genre or any other subjective decisions of the artist.
+
+Musical genre
+
+As mentioned by Meyer, all musical genres are defined by “rules of musical grammar and syntax found in textbooks on harmony, counterpoint and theory in general” (Meyer B., 1957). This is what enables musicians and composers to create order, and what enables listeners to identify it. As proposed earlier on, the level of order of a musical event is identified in comparison to what is expected by the listener. This expectation relies on centuries of composition that trained our ears to specific musical norms. When a perfect cadence terminates a piece of baroque music, every note seems structured and perfectly ordered: the listener’s ear is trained to western classical music and expects the musical resolution. Rules of musical grammar and syntax are not only used in pre-written music but are also extremely present in improvised jazz. Bastien and Hostager divide these conventions into musical structures (the formal rules of jazz theory) and social practices (Einsenberg E., 1990).
+
+Communication rules
+
+Social practices are fundamental in improvisation because they enable the communication of musical information (Meyer B., 1957). This is particularly relevant in ensemble situations, where the set of rules defined by the genre allows the musicians to understand the musical behaviour of the group. In this way, they are able to adapt their playing whereby guaranteeing the stability of the emergent creation. In a standard jazz improvisation, such abstract rules are usually defined by habit and practice. Eisenberg divides these into behavioural and communicative norms. Behavioural codes are used as guidelines by each musician during the performance (for example each musician gets a chance to solo at some point in the performance), and communicative codes enable musicians to signal changes to the other members of the group (for example using hand gestures to indicate a change in dynamics or tempo). These communication rules are necessary to “allow players to coordinate actions whilst inviting autonomous expression” (Barrett J. F., 2000).
+
+Other abstract constraints
+
+In the mid 20th century, a group of experimental musicians broke out of cultural norms to explore different sets of constraints. Composers such as Steve Reich and John Cage began to generate new musical outcomes in this way, playing with new abstract rules in their works. From this same artistic movement, Robert Ashley’s composition She Was A Visitor is a good example of ensemble improvisation where a set of abstract rules is given to a group of performers as a way to generate unexpected but organised results (Figure 6).
+
+
+Figure 6. Performance rules for “She Was A Visitor”, Robert Ashley (1967)
+
+As shown in Figure 6, the piece clearly states what each performer is meant to do in relationship to the other members of the system. For example, the group leaders respond to the main speaker by choosing a phoneme to repeat, while the chorus groups react to their designated group leader by sustaining the phoneme chosen. These simple rules of interaction are sufficient to generate an unplanned but ordered musical outcome.
+
+It appears from the previous examples that the abstract constraints dictated by the genre or by the artist serve both as a guide for each performer and as a communication tool between multiple performers; both are necessary conditions to maintain order in the system. Barrett provides an accurate summary of those rules: ” individuals have personal freedom to take initiatives and operate on their own authority (their musical imagination), guided by the constraints of the task, the conventions of practice and the enactments of other players” (Barrett J. F., 2000).
+
+3.3. Emergence
+From the definition of order and the analysis of composition rules can be concluded that when all individual entities of a system follow a common set of rules, a sustained structure appears at the macroscopic scale of the system (Blackwell T. and Young M., 2004). This phenomenon also called emergence is observed in complex systems when “new properties and behaviours emerge that are not contained in the essence of the constituent elements, or able to be predicted from a knowledge of initial conditions” (Mason M., 2008)(Tussey D., 2005)
+
+3.3.1. Cellular Automata
+
+A Cellular Automaton (CA) is a compelling example of the phenomenon of emergence. In a cellular automaton, a set of basic rules is applied to each cell of the system individually, constraining them to respond to their surroundings cells in a specific way. Each cell can be considered as a trivial machine (Gage S., 2006), which means that the same input will always trigger the same output.
+
+In an elementary one-dimensional cellular automaton, the state of each cell only depends on the state of the three adjacent cells situated on the row above. A cell can be in only two states: black or white. There are therefore eight configurations possible for a group of three cells, as shown below at the top of Figure 7. For each of these configurations, the rule of the CA attributes one outcome that defines the state of the new cell. For example, the set of rules shown on Figure 7 states that when three adjacent cells are black, the new cell will be white.
+
+Each elementary CA starts with one black cell in the middle of the top row, and, at each time frame, a new row is generated using the rules of the CA applied to the previous row. The following figure is an example of one such set of rule.
+
+
+Figure 7. Cellular Automata, rule nÂ°54
+
+The figures presented hereafter (Figure 8) show different scenarios of elementary cellular automata. What can be observed is that different sets of simple rules will generate different emergent graphical patterns.
+
+
+Figure 8. Examples of Cellular Automata and their associated rules
+
+The Game of Life is a two-dimensional cellular automaton created by mathematician John Horton Conway that generates an emergent behaviour imitating the growth pattern of a colony of living organisms. It is helpful in understanding the idea of emergence and how it can relate to a performative musical system. The concept is similar to the elementary CA except that instead of reacting to the three previous cells, each cell now reacts to the state of its eight adjacent cells, which changes at each time frame (Miranda E. R., 2003). The particularity of the Game of Life is that there is one specific set of four rules that enables the emergence of a life-like behaviour :
+
+” a) Birth: A cell that is dead (white) at time t becomes alive (black) at time t + 1 if exactly three of its neighbours are alive at time t;
+b) Death by overcrowding: A cell that is alive at time t will die at time t + 1 if four or more of its neighbours are alive at time t;
+c)Deathbyexposure: Acellthatisaliveattimetwilldieattimet+1ifit has one or none live neighbours at time t;
+d) Survival: A cell that is alive at time t will remain alive at time t + 1 only if it has either two or three live neighbours at time t.” (Miranda E. R., 2003)
+
+
+Figure 9. Evolution of cells in the Game of Life
+
+Depending on the initial conditions of the CA (what cells are set as alive and what cells are set as dead at t=0), the system will show different dynamic patterns.
+
+ 
+
+This means that one trivial algorithm dictating the behaviour of a cell in relationship to its direct neighbours combined with a choice of initial conditions are sufficient conditions to enable self-organisation in a system of distributed performers.
+
+Self-organisation can therefore by achieved in a system that possesses:
+
+Condition 1. A trivial algorithm dictating the behaviour of an individual in relationship to its direct neighbours
+
+Condition 2. An initial set of conditions that are able to impact the outcome of the performance
+
+ 
+
+3.3.2. Performative Emergence
+
+The concept of emergence has been applied in the development of new composition softwares and techniques (Miranda E. R., 2003), (Xenakis, 1971), but has also been used in a more sociological approach in the study of musical and theatrical improvisation. Sawyer uses the concept of “the emergent” to describe the creation that appears from the contribution of all participants and which evolves throughout time by being fed and filtered by individual decisions while also following up on its previous self (Sawyer R. K., 1995). This is represented by the following diagram (Figure 11) that shows the looping mechanism by which the members of the improvising group find, propose and filter new creative material to enrich the emergent.
+
+
+Figure 11. “Synchronic (improvisational) interaction”, (Sawyer R. K., 1995).
+
+He describes the emergent as being a “constraining force” acting back on the performers, creating this feedback loop between microscopic and macroscopic level of the system (Sawyer R. K., 1996). At every moment, the decision of a performer will orientate the improvisation in an even more precise path. Sawyer gives the example of a short improvisation in theatre where two actors evolve, in the time-frame of a few sentences, from an infinity of possible configurations (when no one has said or done anything), to a more constrained situation where one actor is a bus driver and the other is a passenger. In this specific example, where the actors settle the situation in which they will develop the performance, each decision lowers the entropy of the system and brings it to a more ordered state. For example, when the first actor decides to sit and mimic a driver, the number of possible configurations drops from infinite (being anywhere) to being in a vehicle, and when the second actor comes in and stands next to the driver, looking for something in his pocket, the entropy drops again as the situation evolves from being in any vehicle to being in a bus.
+
+The performing system is therefore constrained by two main entities: the general rules defined prior to the performance, which are absolute as they do not depend on the performance itself, and the emergent rules that depend only on the performance (Figure 12). This statement is also valid in musical improvisation, where the absolute rules are defined before the beginning of the performance (by constraints stated by the musical genre, the social norms of musical interaction and the physicality of the instruments), and the emergent rules are created during the improvisation (by the choices of the musicians).

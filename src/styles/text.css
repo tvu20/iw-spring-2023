@@ -36,6 +36,15 @@
   text-align: left;
 }
 
+.white-bg {
+  background-color: white;
+}
+
+.text-container img {
+  width: 80vw;
+  max-width: 700px;
+}
+
 .text-container h2 {
   font-size: 35px;
   font-weight: 600;
@@ -65,6 +74,31 @@
   font-style: italic;
   font-family: "PT Serif", serif;
   color: #0a6e55;
+  font-weight: 400;
+}
+
+/* .quote b {
+  font-weight: 600;
+} */
+
+.video-container {
+  padding: 20px 30px 10px;
+  /* background-color: rgba(250, 234, 212, 0.7); */
+  width: 90vw;
+  text-align: center;
+}
+
+.img-container {
+  padding: 20px 30px 10px;
+  /* background-color: rgba(250, 234, 212, 0.7); */
+  width: 70vw;
+  text-align: center;
+}
+
+.img-container img {
+  width: 80vw;
+  max-width: 700px;
+  margin-bottom: 20px;
 }
 
 /* specific page styling */

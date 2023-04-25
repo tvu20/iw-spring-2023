@@ -6,12 +6,12 @@ export const TricaudIntro = (props) => {
   const { updateBG } = props;
 
   useEffect(() => {
-    updateBG(false);
+    updateBG(true);
   }, [updateBG]);
   return (
     <div className="page-container fade-in">
       {/* <ScrollingBackground /> */}
-      <div className="text-container">
+      <div className="text-container white-bg">
         <p>
           In 2018, Marguerite Tricaud published “Musical Emergence – A study of
           self-organization and disruption in systems of distributed
