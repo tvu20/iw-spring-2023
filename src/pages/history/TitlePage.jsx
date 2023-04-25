@@ -9,10 +9,11 @@ export const TitlePage = (props) => {
     updateBG(false);
   }, [updateBG]);
   return (
-    <div className="page-container fade-in">
+    <div className="page-container fade-in cover-bg">
       {/* <ScrollingBackground /> */}
       <div className="title-container">
-        <h3>Emergent Patterns in Music: The Road So Far</h3>
+        <h1>Emergent Patterns in Music</h1>
+        <h2>The Road So Far</h2>
       </div>
     </div>
   );

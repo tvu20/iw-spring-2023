@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { Footer } from "./components/Footer";
@@ -16,6 +16,12 @@ import "./styles/text.css";
 import "./styles/homepage.css";
 
 export const Homepage = () => {
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    //
+  }, []);
+
   return (
     <div className="homepage-container fade-in">
       {/* <ScrollingBackground /> */}
@@ -50,7 +56,7 @@ export const Homepage = () => {
           <img src={music1} alt="music" />
         </div>
       </div>
-      <div className="home-section flex-container">
+      <div className="home-section flex-container" ref={wrapperRef}>
         <div className="flex-item__image">
           <img src={music2} alt="music" />
         </div>

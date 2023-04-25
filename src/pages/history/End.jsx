@@ -19,10 +19,10 @@ export const End = (props) => {
         </p>
         <p>To return to the homepage, click Return.</p>
         <Link to="/algorithm">
-          <button>Next</button>
+          <button className="btn end-btn">Next</button>
         </Link>
         <Link to="/">
-          <button>Return</button>
+          <button className="btn return-btn">Return</button>
         </Link>
       </div>
     </div>

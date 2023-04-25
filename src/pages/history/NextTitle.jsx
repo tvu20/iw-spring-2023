@@ -9,9 +9,9 @@ export const NextTitle = (props) => {
     updateBG(false);
   }, [updateBG]);
   return (
-    <div className="page-container fade-in">
+    <div className="page-container fade-in cover-bg">
       {/* <ScrollingBackground /> */}
-      <div className="text-container">
+      <div className="section-container">
         <h1>What's Next?</h1>
       </div>
     </div>

@@ -9,9 +9,9 @@ export const GenTitle = (props) => {
     updateBG(false);
   }, [updateBG]);
   return (
-    <div className="page-container fade-in">
+    <div className="page-container fade-in cover-bg">
       {/* <ScrollingBackground /> */}
-      <div className="text-container">
+      <div className="section-container">
         <h1>Generative Music Utilizing Emergent Properties</h1>
       </div>
     </div>
