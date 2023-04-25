@@ -1,0 +1,103 @@
+.alg-container {
+  background: rgba(38, 153, 138, 0.1);
+}
+
+.alg-container p,
+li {
+  color: #6a8a88;
+}
+
+.alg-banner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(5, 62, 61, 0.9);
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.alg-banner h1 {
+  text-align: center;
+  width: 80vw;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 100px;
+}
+
+.alg-banner h2 {
+  width: 70vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #e6f5f3;
+}
+
+.alg-banner img {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 300px;
+  position: absolute;
+  bottom: -50px;
+}
+
+.alg-section {
+  width: 100vw;
+  padding: 200px 0;
+  /* background: rgba(38, 153, 138, 0.2); */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(5, 62, 61, 0.9);
+  position: relative;
+}
+
+.alg-section h2 {
+  width: 70vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #084744;
+}
+
+.alg-section h3 {
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.alg-section h4 {
+  font-size: 20px;
+}
+
+.alg-item-container {
+  margin: 0 80px;
+  gap: 15px;
+}
+.alg-item {
+  text-align: center;
+  max-width: 350px;
+}
+
+.diagram-img {
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 50px;
+}
+
+.alg-explanation {
+  width: 85vw;
+  text-align: left;
+}
+
+.alg-explanation h3 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 800px) {
+}

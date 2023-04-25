@@ -28,7 +28,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-p {
+p,
+li {
   font-size: 17px;
   line-height: 1.4;
 }
@@ -206,6 +207,9 @@ a {
   text-align: center;
   width: 100%;
   background-color: rgba(5, 62, 61, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-container img {
@@ -217,6 +221,7 @@ a {
   font-weight: 400;
   color: #b1c4c1;
   margin: 5px 0 20px;
+  width: 80%;
 }
 
 /* MOBILE ONLY */
