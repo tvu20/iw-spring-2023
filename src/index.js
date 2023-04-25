@@ -6,9 +6,9 @@ import { Homepage } from "./Homepage";
 import History from "./History";
 import Demo from "./Demo";
 import Algorithm from "./Algorithm";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Homepage />,
