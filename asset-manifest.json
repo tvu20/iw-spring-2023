@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/iw-spring-2023/static/css/main.d4c85094.css",
+    "main.js": "/iw-spring-2023/static/js/main.fbdf31fc.js",
+    "static/media/banner.png": "/iw-spring-2023/static/media/banner.3d1f78b00201afaeb6b1.png",
+    "static/media/alg.jpeg": "/iw-spring-2023/static/media/alg.aa1272087fca7429940e.jpeg",
+    "static/media/history.jpeg": "/iw-spring-2023/static/media/history.3419ef1d785f0c490f8d.jpeg",
+    "static/media/demo.png": "/iw-spring-2023/static/media/demo.7229faae8ddd46cc1efb.png",
+    "static/media/music2.jpeg": "/iw-spring-2023/static/media/music2.b2110b1cf24f44b4e016.jpeg",
+    "static/media/music1.png": "/iw-spring-2023/static/media/music1.07c9b654fecb839c5e24.png",
+    "static/media/neural.png": "/iw-spring-2023/static/media/neural.c8954ed961eb76053a24.png",
+    "static/media/exp.png": "/iw-spring-2023/static/media/exp.61f47f4ee948cb3b7bcb.png",
+    "static/media/outputs.png": "/iw-spring-2023/static/media/outputs.71045c911d1c18861fa4.png",
+    "index.html": "/iw-spring-2023/index.html",
+    "main.d4c85094.css.map": "/iw-spring-2023/static/css/main.d4c85094.css.map",
+    "main.fbdf31fc.js.map": "/iw-spring-2023/static/js/main.fbdf31fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4c85094.css",
+    "static/js/main.fbdf31fc.js"
+  ]
+}
