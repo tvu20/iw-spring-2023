@@ -1,22 +1,31 @@
 {
   "files": {
-    "main.css": "/iw-spring-2023/static/css/main.d4c85094.css",
-    "main.js": "/iw-spring-2023/static/js/main.500df3e5.js",
+    "main.css": "/iw-spring-2023/static/css/main.b1943081.css",
+    "main.js": "/iw-spring-2023/static/js/main.f9a610a2.js",
+    "static/media/jazz.jpeg": "/iw-spring-2023/static/media/jazz.7af84f035c2c97fbd6be.jpeg",
     "static/media/banner.png": "/iw-spring-2023/static/media/banner.3d1f78b00201afaeb6b1.png",
     "static/media/alg.jpeg": "/iw-spring-2023/static/media/alg.aa1272087fca7429940e.jpeg",
     "static/media/history.jpeg": "/iw-spring-2023/static/media/history.3419ef1d785f0c490f8d.jpeg",
+    "static/media/BG.png": "/iw-spring-2023/static/media/BG.3bc08431c79efcde7e3f.png",
     "static/media/demo.png": "/iw-spring-2023/static/media/demo.7229faae8ddd46cc1efb.png",
     "static/media/music2.jpeg": "/iw-spring-2023/static/media/music2.b2110b1cf24f44b4e016.jpeg",
+    "static/media/wave.png": "/iw-spring-2023/static/media/wave.1335896362979b00617b.png",
     "static/media/music1.png": "/iw-spring-2023/static/media/music1.07c9b654fecb839c5e24.png",
+    "static/media/networkdiagram.png": "/iw-spring-2023/static/media/networkdiagram.81cff817cd2f40e1f5f9.png",
+    "static/media/nodediagram.png": "/iw-spring-2023/static/media/nodediagram.dd5f61740f3aa310a3c5.png",
     "static/media/neural.png": "/iw-spring-2023/static/media/neural.c8954ed961eb76053a24.png",
+    "static/media/mess.png": "/iw-spring-2023/static/media/mess.15b4f2f1b2103c3e888d.png",
+    "static/media/timbre.png": "/iw-spring-2023/static/media/timbre.d6aec1d8babb3f488762.png",
     "static/media/exp.png": "/iw-spring-2023/static/media/exp.61f47f4ee948cb3b7bcb.png",
+    "static/media/book.txt": "/iw-spring-2023/static/media/book.bfe527468995adeabf55.txt",
     "static/media/outputs.png": "/iw-spring-2023/static/media/outputs.71045c911d1c18861fa4.png",
+    "static/media/rules.png": "/iw-spring-2023/static/media/rules.656bd853df9547adecd0.png",
     "index.html": "/iw-spring-2023/index.html",
-    "main.d4c85094.css.map": "/iw-spring-2023/static/css/main.d4c85094.css.map",
-    "main.500df3e5.js.map": "/iw-spring-2023/static/js/main.500df3e5.js.map"
+    "main.b1943081.css.map": "/iw-spring-2023/static/css/main.b1943081.css.map",
+    "main.f9a610a2.js.map": "/iw-spring-2023/static/js/main.f9a610a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4c85094.css",
-    "static/js/main.500df3e5.js"
+    "static/css/main.b1943081.css",
+    "static/js/main.f9a610a2.js"
   ]
 }
