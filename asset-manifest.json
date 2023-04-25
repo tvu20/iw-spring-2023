@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/iw-spring-2023/static/css/main.b1943081.css",
-    "main.js": "/iw-spring-2023/static/js/main.a6243a1f.js",
+    "main.css": "/iw-spring-2023/static/css/main.c0064eec.css",
+    "main.js": "/iw-spring-2023/static/js/main.3cb1940e.js",
     "static/media/jazz.jpeg": "/iw-spring-2023/static/media/jazz.7af84f035c2c97fbd6be.jpeg",
     "static/media/banner.png": "/iw-spring-2023/static/media/banner.3d1f78b00201afaeb6b1.png",
     "static/media/alg.jpeg": "/iw-spring-2023/static/media/alg.aa1272087fca7429940e.jpeg",
@@ -21,11 +21,11 @@
     "static/media/outputs.png": "/iw-spring-2023/static/media/outputs.71045c911d1c18861fa4.png",
     "static/media/rules.png": "/iw-spring-2023/static/media/rules.656bd853df9547adecd0.png",
     "index.html": "/iw-spring-2023/index.html",
-    "main.b1943081.css.map": "/iw-spring-2023/static/css/main.b1943081.css.map",
-    "main.a6243a1f.js.map": "/iw-spring-2023/static/js/main.a6243a1f.js.map"
+    "main.c0064eec.css.map": "/iw-spring-2023/static/css/main.c0064eec.css.map",
+    "main.3cb1940e.js.map": "/iw-spring-2023/static/js/main.3cb1940e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1943081.css",
-    "static/js/main.a6243a1f.js"
+    "static/css/main.c0064eec.css",
+    "static/js/main.3cb1940e.js"
   ]
 }
