@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect, useCallback } from "react";
 import { ProgressBar } from "./ProgressBar";
-// import { MobileBanner } from "./MobileBanner";
+import { MobileBanner } from "./MobileBanner";
 // import { Page } from "./Page";
 
 export const Wrapper = (props) => {
@@ -42,7 +42,7 @@ export const Wrapper = (props) => {
 
   return (
     <>
-      {/* <MobileBanner /> */}
+      <MobileBanner />
       <ProgressBar current={page} total={props.max} />
       <Page page={page} />
       {page !== props.max && (

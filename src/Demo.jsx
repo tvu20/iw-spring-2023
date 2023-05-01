@@ -1,7 +1,6 @@
 import { Wrapper } from "./components/Wrapper";
 // import { Homepage } from "./Homepage";
 import { Link } from "react-router-dom";
-import { Routing } from "./pages/demo/Routing";
 import "./styles/main.css";
 
 function Demo() {
