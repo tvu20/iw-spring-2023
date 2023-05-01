@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import "../../styles/text.css";
 
-export const TitlePage = (props) => {
+export const NextTitle = (props) => {
   const { updateBG } = props;
 
   useEffect(() => {
@@ -11,9 +11,8 @@ export const TitlePage = (props) => {
   return (
     <div className="page-container fade-in cover-bg">
       {/* <ScrollingBackground /> */}
-      <div className="title-container">
-        <h1>Self-Organized Music Generation</h1>
-        <h2>Part 3: Algorithm Demos and Evaluation</h2>
+      <div className="section-container">
+        <h1>What's Next?</h1>
       </div>
     </div>
   );
