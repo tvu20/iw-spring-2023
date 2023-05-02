@@ -1,5 +1,7 @@
 # Music Generation Based on Self-Organization and Emergent Properties. 
 
+Created as part of an Independent Project for Spring 2023 through through the Princeton Department of Computer Science.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Final Project Write-Up
